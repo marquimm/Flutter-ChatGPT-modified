@@ -26,7 +26,7 @@ class OpenAIClient extends OpenAIWrapper {
 
     if (rawData.statusCode == HttpStatus.ok) {
       log.debugString(
-          "============= success ==================\nresponse body :${rawData.data}");
+          "============= SUCCESS ==================\nresponse body :${rawData.data}");
       return onSuccess(rawData.data);
     } else {
       log.errorLog(code: rawData.statusCode, error: "${rawData.data}");
