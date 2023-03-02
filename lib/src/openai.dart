@@ -13,7 +13,7 @@ import 'package:chat_gpt_sdk/src/utils/constants.dart';
 import 'package:dio/dio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'client/exception/openai_exception.dart';
-import 'client/interceptor/interceptor_wrapper.dart';
+import 'client/interceptor/interceptor_wrapper.dart';u
 
 class OpenAI {
   OpenAI._();
@@ -155,7 +155,7 @@ class OpenAI {
               "generate image error: ${rawData.statusMessage} code: ${rawData.statusCode} data: ${rawData.data}");
       } else {
         _client.log.debugString(
-            "============= success ==================\nresponse body :${rawData.data}");
+            "============= SUCCESS ==================\nresponse body :${rawData.data}");
         _genImgController
           ..sink
           ..add(GenImgResponse.fromJson(rawData.data));
