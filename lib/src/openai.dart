@@ -13,7 +13,7 @@ import 'package:chat_gpt_sdk/src/utils/constants.dart';
 import 'package:dio/dio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'client/exception/openai_exception.dart';
-import 'client/interceptor/interceptor_wrapper.dart';u
+import 'client/interceptor/interceptor_wrapper.dart';
 
 class OpenAI {
   OpenAI._();
