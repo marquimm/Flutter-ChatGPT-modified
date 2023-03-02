@@ -115,7 +115,7 @@ class OpenAI {
               "complete error: ${rawData.statusMessage} code: ${rawData.statusCode} data: ${rawData.data}");
       } else {
         _client.log.debugString(
-            "============= success ==================\nresponse body :${rawData.data}");
+            "============= SUCCESS ==================\nresponse body :${rawData.data}");
         _completeControl
           ..sink
           ..add(CTResponse.fromJson(rawData.data));
